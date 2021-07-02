@@ -6,23 +6,38 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    width: 100%;
+    width: 70%;
+    margin: auto;
     .c-Header__Logo {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       width: 100%;
     }
 
     .l-Header__Links {
-        display: flex;
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      .c-Header__Links {
         width: 100%;
-        justify-content: center;
-        .c-Header__Links {
-            width: 50%;
-            display: flex;
-            justify-content: space-around;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a {
+          color: black;
         }
+        .c-Links__Contact {
+          border: thin solid black;
+          padding: 10px 20px;
+          border-radius: 34px;
+          outline: none;
+          &:hover {
+            opacity: 1;
+            background-color: black;
+            color: white;
+          }
+        }
+      }
     }
-   
   }
 }

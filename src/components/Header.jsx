@@ -17,8 +17,8 @@ const Header = () => {
           <div className="c-Header__Links">
             <NavLink to="/home">Home</NavLink>
             <NavLink to="/about">About</NavLink>
-            <NavLink to="/work">Work</NavLink>
-            <NavLink to="/contact">Contact me</NavLink>
+            <NavLink to="/projects">Work</NavLink>
+            <NavLink className = "c-Links__Contact" to="/contact">Contact me</NavLink>
           </div>
         </div>
       </div>

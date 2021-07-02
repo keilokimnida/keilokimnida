@@ -1,9 +1,23 @@
 // Global (General) styles
-a, p, h1, h2, h3, h4, h5, h6, button, label {
-    margin: 0;
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+label {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body a {
-    text-decoration: none;
-    color: #0D6EFD;
+  text-decoration: none;
+  color: #0d6efd;
+  &:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+  }
 }
