@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  .l-Inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    .c-Header__Logo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .l-Header__Links {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        .c-Header__Links {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+   
+  }
+}
