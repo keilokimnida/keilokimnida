@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div className="c-Home">
+      <div className="c-Home c-Main">
         {/* Top */}
         <div className ="c-Home__Top">
             <h2>Hello, I am</h2>

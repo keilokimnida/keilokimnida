@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../assets/images/keilokimnida.png";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = ({classTheme}) => {
   return (
     <header className="c-Header">
       <div className="l-Inner">
@@ -17,7 +17,7 @@ const Header = () => {
           <div className="c-Header__Links">
             <NavLink to="/home">Home</NavLink>
             <NavLink to="/about">About</NavLink>
-            <NavLink to="/projects">Work</NavLink>
+            <NavLink to="/projects">Projects</NavLink>
             <NavLink className = "c-Links__Contact" to="/contact">Contact me</NavLink>
           </div>
         </div>
