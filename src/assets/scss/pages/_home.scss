@@ -1,72 +1,174 @@
 .c-Home {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   // Top styles
   &__Top {
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    height: 500px;
+
     h2 {
       font-size: $font-large;
       font-weight: normal;
     }
+
     h1 {
       font-size: $font-xxLarge;
     }
+
     p {
       font-size: $font-medium;
+    }
+  }
+
+  // Socials section
+  &__Socials {
+    padding-bottom: 50px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: $font-small;
+      font-weight: bold;
+    }
+
+    .c-Home__Socials-links {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      .c-Socials-Links {
+        &__LinkedIn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+          margin: 10px 20px;
+          padding: 10px 20px;
+          font-weight: bold;
+          img {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            margin-right: 10px;
+          }
+
+          color: white;
+          background-color: #0E76A8;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        &__Github {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 20px;
+          padding: 10px 20px;
+          border-radius: 5px;
+          font-weight: bold;
+          img {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            margin-right: 10px;
+            border-radius: 50px;
+          }
+          color: white;
+          background-color: #211f1f;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
     }
   }
 
   // Bento box section
   &__Bento-box {
     .l-Bento-box__Row-1 {
-       display: flex;
-       flex-direction: row;
-       
-        .c-Bento-box__Skill-set {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-            background-color: #e6ffdc;
-            border-radius: 34px;
-            height: 400px;
-            margin-right: 10px;
-            margin-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+
+      .c-Bento-box__Skill-set {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: #e6ffdc;
+        border-radius: 34px;
+        height: 400px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+        &:hover {
+          transform: scaleX(0.95) scaleY(0.95);
         }
 
-        .c-Bento-box__About {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-            background-color: #fdfbf0;
-            border-radius: 34px;
-            height: 400px;
-            margin-left: 10px;
-            margin-bottom: 10px;
+        &:active {
+          transform: scaleX(0.9) scaleY(0.9);
         }
+      }
+
+      .c-Bento-box__About {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fdfbf0;
+        border-radius: 34px;
+        height: 400px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+        &:hover {
+          transform: scaleX(0.95) scaleY(0.95);
+        }
+
+        &:active {
+          transform: scaleX(0.9) scaleY(0.9);
+        }
+      }
     }
 
     .l-Bento-box__Row-2 {
-        .c-Bento-box__Projects {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-            background-color: #F0FAFD;
-            border-radius: 34px;
-            height: 400px;
-            h1 {
-                font-size: $font-xLarge;
-            }
+      .c-Bento-box__Projects {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f0fafd;
+        border-radius: 34px;
+        height: 400px;
+
+        h1 {
+          font-size: $font-xLarge;
         }
+
+        &:hover {
+          transform: scaleX(0.95) scaleY(0.95);
+        }
+
+        &:active {
+          transform: scaleX(0.9) scaleY(0.9);
+        }
+      }
     }
   }
 }
